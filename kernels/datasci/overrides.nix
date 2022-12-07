@@ -7,7 +7,7 @@ let
   };
 in
 {
-  inherit (nixpkgs.python3Packages) tensorflow matplotlib scipy;
+  inherit (nixpkgs.python3Packages) tensorflow matplotlib scipy scikit-learn;
 }
 // addNativeBuildInputs "traitlets" [ final.hatchling ]
 // addNativeBuildInputs "jupyter-client" [ final.hatchling ]
